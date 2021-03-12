@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilo-desktop.css">
+	<link rel="stylesheet" href="css/estilo-mobile.css">
+	<link rel="stylesheet" href="css/estilo-slider.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Sans:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet"> 
+	<title>Jorn@l</title>
+	<script src="js/script.js">	</script>
+</head>
+
+<body onload="mostra_data(), limpaCheck()">
+	<header>
+		<div class="header">
+			<div class="div-logo">
+				<div class="logo">
+					<h1>Jorn@l</h1>	
+				</div>				
+			</div>
+
+			<div class="menu-categorias">
+				<div class="menu-ham">
+					<input type="checkbox" id="check" onchange="showMenu()">
+					<label for="check" >
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+				</div>
+				
+				<form action="">
+					<input type="text" name="" id="buscar" placeholder="Buscar">
+				</form>	
+			</div>
+		</div>
+	</header>
+
+	<nav class="menu-flut1" id="menu-flut">
+		<ul class="menu3">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Geral</a></li>
+			<li><a href="#">Economia</a></li>
+			<li><a href="#">Educação</a></li>
+			<li><a href="#">Entretenimento</a></li>
+			<li><a href="#">Esportes</a></li>
+			<li><a href="#">Saúde</a></li>
+			<li><a href="#">Ciência</a></li>
+			<li><a href="#">Vídeos</a></li>
+		</ul>
+	</nav>
+	
+	<div class="container-global">
+		<div class="dia-data" id="dia-data">
+			<p></p>
+		</div>
+
+		<div class="slider-e-ad">
+			<div class="slider">
+				<div class="slides">
+					<input type="radio" name="radio-btn" id="radio1">
+					<input type="radio" name="radio-btn" id="radio2">
+					<input type="radio" name="radio-btn" id="radio3">
+					<input type="radio" name="radio-btn" id="radio4">
+
+					<div class="slide first">
+						<div class="link-container">
+							<a href="#" target="_blank">Museu da Língua Portuguesa será reaberto em julho</a>
+						</div>
+						<img src="img/slider/museu.jpg" alt="">
+					</div>
+
+					<div class="slide">
+						<div class="link-container">
+							<a href="../login/index.html" target="_blank">Frio recorde congela as Cataratas do Niágara</a>
+						</div>
+						<img src="img/slider/niagara.jpeg" alt="">
+					</div>
+
+					<div class="slide">
+						<div class="link-container">
+							<a href="../login/index.html" target="_blank">Sonda Perseverance envia imagens coloridas de Marte</a>
+						</div>
+						<img src="img/slider/marte.jpg" alt="">
+					</div>
+
+					<div class="slide">
+						<div class="link-container">
+							<a href="../login/index.html" target="_blank">Anvisa concede registro definitivo à vacina da Pfizer</a>
+						</div>
+						<img src="img/slider/pfizer.jpg" alt="">
+					</div>
+
+					<div class="navegacao-auto">
+						<div class="auto-btn1"></div>
+						<div class="auto-btn2"></div>
+						<div class="auto-btn3"></div>
+						<div class="auto-btn4"></div>
+					</div>
+				</div>
+
+				<div class="navegacao-manual">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+					<label for="radio4" class="manual-btn"></label>
+				</div>
+			</div>
+
+			<div class="ad-topo gradient">
+				<p>ANÚNCIO</p>
+			</div>
+		</div>
+						
+		<div class="container-conteudo">
+			<section>
+				<div class="secao-noticias">
+
+					<div class="materia borda-topo">
+						<img class="foto-noticia"src="img/ibge.jpg" alt="">
+						<div class="descricao-noticia">
+							<p  class="categoria-noticia">Concursos</p>
+							<a class="link-noticia" href="#">Concurso IBGE 2021: inscrições abertas</a>
+							<p class="resumo-materia">São mais de 200.000 vagas e o período de inscrição se encerra em 19 de março.</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>
+					</div>
+
+					<div class="materia">
+						<img class="foto-noticia"src="img/kong.jpg" alt="">
+						<div class="descricao-noticia">
+							<p class="categoria-noticia">Cinema</p>
+							<a class="link-noticia" href="#">'Godzilla vs Kong' estreia em março</a>
+							<p class="resumo-materia">O duelo entre os dois gigantes será exibido nas telonas a partir do dia 26.</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>
+					</div>
+
+					<div class="materia">
+						<img class="foto-noticia"src="img/covid.jpg" alt="">
+						<div class="descricao-noticia">
+							<p class="categoria-noticia">Covid-19</p>
+							<a class="link-noticia" href="#">Variante de Manaus já está em pelo menos 12 estados do Brasil</a>
+							<p class="resumo-materia">A população deve redobrar as medidas de proteção contra o coronavírus.</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>
+					</div>
+
+					<div class="anuncio-secao-noticias gradient">
+						<p>ANÚNCIO</p>
+					</div>
+
+					<div class="materia borda-topo">
+						<img class="foto-noticia"src="img/marte.jpg" alt="">
+						<div class="descricao-noticia">
+							<p class="categoria-noticia">De olho em Marte</p>
+							<a class="link-noticia" href="#">Emirados Árabes e China enviam sondas ao planeta Marte</a>
+							<p class="resumo-materia">As sondas chegaram ao planeta vermelho em fevereiro.</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>
+					</div>
+
+					<div class="materia">
+						<img class="foto-noticia"src="img/joe.jpg" alt="">
+						<div class="descricao-noticia">
+							<p class="categoria-noticia">Mundo</p>
+							<a class="link-noticia" href="#">Joe Biden Coloca os EUA de volta no acordo de Paris</a>
+							<p class="resumo-materia">O novo presidente quer zerar as emissões de gases estufa até 2050.</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<aside>
+				<div class="sidebar">
+
+					<div class="materia-sidebar">													
+						<div class="descricao-noticia-sidebar">
+							<p class="categoria-noticia">Economia</p>
+							<a class="link-noticia-sidebar" href="#">Expectativa de crescimento do PIB brasileiro em 2021</a>
+							<p class="resumo-materia">Estimativas apontam um crescimento de aproximadamente 3% nesse ano</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>
+						<img class="foto-materia-sidebar"src="img/pib.jpg" alt="">
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>					
+					</div>
+
+					<div class="materia-sidebar">													
+						<div class="descricao-noticia-sidebar">
+							<p class="categoria-noticia">Vacinação</p>
+							<a class="link-noticia-sidebar" href="#"> Brasil vacinou mais de 5,81 milhões</a>
+							<p class="resumo-materia"> A quantidade de brasileiros que recebeu as duas doses da vacina é de 1.115.832 pessoas. </p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>	
+						<img class="foto-materia-sidebar" src="img/vacina.jpg" alt="">
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>					
+					</div>
+
+					<div class="materia-sidebar">													
+						<div class="descricao-noticia-sidebar">
+							<p class="categoria-noticia">Saúde</p>
+							<a class="link-noticia-sidebar" href="#">Rússia registra casos de gripe aviária em humanos</a>
+							<p class="resumo-materia">Trabalhadores de uma granja foram infectados pelo vírus influenza H5N8</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>	
+						<img class="foto-materia-sidebar" src="img/frango.jpg" alt="">
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>					
+					</div>
+
+					<div class="anuncio-sidebar gradient">
+						<p>ANÚNCIO</p>
+					</div>
+
+					<div class="materia-sidebar borda-topo">													
+						<div class="descricao-noticia-sidebar">
+							<p class="categoria-noticia">Esporte</p>
+							<a class="link-noticia-sidebar" href="#"> Jogos olímpicos de Tóquio devem ocorrer em julho </a>
+							<p class="resumo-materia">O evento que ocorreria em 2020 e foi adiado devido à pandemia, deve ser realizado esse ano.</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>	
+						<img class="foto-materia-sidebar"src="img/olimpiadas.jpg" alt="">
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>					
+					</div>
+
+					<div class="materia-sidebar">													
+						<div class="descricao-noticia-sidebar">
+							<p class="categoria-noticia">Educação</p>
+							<a class="link-noticia-sidebar" href="#">Volta às aulas ainda divide opiniões</a>
+							<p class="resumo-materia">Muito se discute sobre voltar ou não às aulas em meio à pandemia</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>	
+						<img class="foto-materia-sidebar" src="img/estudando.jpg" alt="">	
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>				
+					</div>
+
+					<div class="anuncio-sidebar gradient">
+						<p>ANÚNCIO</p>
+					</div>
+
+					<div class="materia-sidebar borda-topo">
+						<div class="descricao-noticia-sidebar">
+							<p class="categoria-noticia"> Aumento da gasolina</p>
+							<a class="link-noticia-sidebar" href="#">Preço da gasolina já sofreu quatro reajustes em 2021</a>
+							<p class="resumo-materia">O reajuste mais recente foi de 10,2%.</p>
+							<p class="p-tempo">Em 20/02/2021</p>
+						</div>													
+						<img class="foto-materia-sidebar" src="img/gasolina2.jpg" alt="">	
+						<div class="div-p-tempo-pequeno">
+							<p class="p-tempo-pequeno">Em 20/02/2021</p>
+						</div>				
+					</div>
+
+				</div>
+			</aside>
+		</div>				
+	</div>	
+
+	<footer>
+		<div class="footer">
+			<p>Jorn@l</p>
+				<ul class="menu-footer">
+					<li><a href="#">O jornal</a></li>
+					<li><a href="#">Anuncie aqui</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>			
+		</div>		
+	</footer>
+</body>
+</html>
